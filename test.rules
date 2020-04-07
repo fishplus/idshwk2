@@ -1,1 +1,1 @@
-
+alert tcp any any -> any 3399 (msg:"
