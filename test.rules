@@ -1,2 +1,2 @@
-alert tcp any any -> any 3399 (msg:"First packet";flow:established;content:"login";nocase;content:"Initial";nocase;flowbits:set,is_bot;flowbits:noalert;)
-alert tcp any any -> any 3399 (msg:"bot founded";flowbits:isset,is_bot;flow:established;)
+alert tcp any any -> any 3399 (msg:"First packet";flow:established;content:"login";nocase;content:"Initial";nocase;flowbits:set,is_bot;flowbits:noalert;sid:1000002)
+alert tcp any any -> any 3399 (msg:"bot founded";flowbits:isset,is_bot;flow:established;sid:1000001;)
